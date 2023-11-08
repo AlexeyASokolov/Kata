@@ -2,20 +2,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Введите длину массива:");
-
         int size = scanner.nextInt();
-        int[] array = new int[size];
+        System.out.println("Среднее арифметическое элементов массива = " + number(size));
+    }
 
-        System.out.println("Введите " + size + " числовых числовых элемента массива:");
+    public static int number(int example) {
+
+        Scanner scanner2 = new Scanner(System.in);
+
+
+        int[] array = new int[example];
+
+        System.out.println("Введите " + example + " числовых числовых элемента массива:");
 
         int j = 0;
         int result = 0;
         for (int i = 0; i < array.length; i++) {
-            array[i] = scanner.nextInt();
+            array[i] = scanner2.nextInt();
         }
 
         for (int i = 0; i < array.length; i++) {
@@ -23,7 +28,7 @@ public class Main {
         }
 
 
-        System.out.println("Среднее арифметическое элементов массива = " + result / array.length);
+        return  (result / array.length);
 
     }
 }
