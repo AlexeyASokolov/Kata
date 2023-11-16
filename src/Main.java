@@ -17,7 +17,6 @@ public class Main {
 
         System.out.println("Введите " + example + " числовых числовых элемента массива:");
 
-        int j = 0;
         int result = 0;
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner2.nextInt();
